@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      /* Navbar Styling */
+      .bg-light {
+        background-color: #555e70 !important;
+      }
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: white !important;
+      }
+
+      /* Background Image Styling */
+      body {
+        background: url("assets/PinkFlower.jpg") no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+      }
+
+      /* Centered Content */
+      .content {
+        margin-top: 200px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 50px;
+        color: black;
+        margin-bottom: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      /* Explore Button */
+      .explore-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .explore-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Centered Welcome Text with Explore Button -->
+    <div class="content">
+      <h1>Welcome, Weather Explorers!</h1>
+      <a href="index.html" class="explore-btn">Explore Now</a>
+    </div>
+
+    <!-- Bootstrap JS (For Navbar Functionality) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

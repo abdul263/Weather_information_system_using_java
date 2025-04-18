@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("assets/Background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 75%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e6f5fb;
+  border: none;
+}
+
+.search-box button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
+
+.weather-body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+  display: none;
+}
+
+.weather-img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.weather-box {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temperature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+
+.weather-details i {
+  font-size: 36px;
+}
+
+.text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.text span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.location-not-found {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.location-not-found h1 {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
+}
+
+.location-not-found img {
+  width: 80%;
+}
+
+/* Back Button Styling */
+.back-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background-color: #a71d2a;
+}
